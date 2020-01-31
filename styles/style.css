@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+body{
+    font-family: Montserrat;
+    width: 100%;
+}
+header{
+    background: url(../images/background.png)  no-repeat ;
+    background-size: cover;
+    height: 100vh;
+    color: #ffffff;   
+}
+header::after{
+/* width: 1920px;
+height: 1000px; */
+background-color: #fce38a;
+background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.top_line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+.logo{
+font-size: 30px;
+font-weight: 700;
+}
+.header_nav{
+    display: flex;
+    align-content: flex-end;
+}
+.header_nav ul{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.header_nav ul li{
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.header_nav ul li a{
+    text-decoration: none;
+    color:inherit;
+}
+header h2{
+    font-family: "Kaushan Script";
+    font-size: 72px;
+    font-weight: 400;
+    margin: 229px 0 42px 0;
+    text-align: center;
+}
+header h1{
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 140px;
+    text-transform: uppercase;
+    padding-top: 71px;
+    text-align: center;
+}
