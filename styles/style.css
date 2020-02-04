@@ -4,13 +4,16 @@
 body{
     font-family: Montserrat;
     /* width: 100%; */
+    color: #333333;
 }
                                                                             /* Header */
 header{
     background: url(../images/background.png)  no-repeat center ;
     background-size: cover;
-    /* height: 100vh; */
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: #ffffff;  
     position: relative; 
 }
@@ -123,6 +126,7 @@ header::before{
     text-transform: uppercase;
     padding: 14px 32px;
     transition: all .6s linear;
+    font-family: inherit;
 }
 .header__button:hover{
     background: #ffffff;
@@ -168,4 +172,83 @@ header::before{
     width: 70px;
     height: 3px;
     background-color: #f38181;
+}
+                                                                    /* About */
+                                                                   
+.section-text__inner{
+    margin: 90px auto 100px;
+    text-align: center;
+    width: 100%;
+    max-width: 955px;
+}
+.section-subtitle{
+    font-family: "Kaushan Script";
+    font-size: 24px;
+    font-weight: 400;
+}
+.section-title{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 23px 0 47px;
+    padding-bottom: 43px;
+    position: relative;
+}
+.section-title::after{
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-30px);
+}
+.section-text{
+    color: #999999;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.about-image{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+.about-image-outer{
+
+}
+.about-image-outer:hover .about-image__wrapper img {
+    opacity: .1;
+    transition: opacity .5s ease-out;
+}
+.about-image-outer:hover .about-image__wrapper{
+    transform: translate(-10px, -10px);
+}
+.about-image__wrapper{
+    background: linear-gradient(to top, rgba(252, 227, 138) 0%, rgba(243, 129, 129) 100%);
+   
+}
+.about-image__wrapper img{
+    transition: opacity .5s ease-out;
+}
+/* .about-image__wrapper:before{
+    content: 'super team';
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+    background-image: url(../images/USERS.png);
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    width: 380px;
+    height: 250px;
+    z-index: 1;
+} */
+.about-counter{
+    margin-top: 110px;
+    background-color: #95e1d3;
+    height: 270px;
 }
