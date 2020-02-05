@@ -176,10 +176,11 @@ header::before{
                                                                     /* About */
                                                                    
 .section-text__inner{
-    margin: 90px auto 100px;
+    padding-top: 90px;
     text-align: center;
     width: 100%;
     max-width: 955px;
+    margin: 0 auto;
 }
 .section-subtitle{
     font-family: "Kaushan Script";
@@ -210,6 +211,7 @@ header::before{
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
+    padding-bottom: 110px;
 }
 .about-image{
   display: flex;
@@ -282,4 +284,33 @@ margin-bottom: 30px;
 font-size: 14px;
 font-weight: 400;
 text-transform: uppercase;
+}
+                                                                            /* Devices */
+.section {
+    background: url(../images/backgroundDising.png) no-repeat center;
+    position: relative;
+    background-size: auto;
+    /* width: 100%; */
+}
+.section::before{
+    content: '';
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.devices__image{
+    display: flex;
+    justify-content: center;
+}
+.devices__image_iPad{
+    max-width: 100%;
+    height: auto;
+}
+.devices__image_iPhone{
+    position: absolute;
+    bottom: -91px;
+    left: calc(50% + 100px);
 }
