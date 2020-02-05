@@ -216,39 +216,70 @@ header::before{
   justify-content: space-between;
   align-items: center;  
 }
-.about-image-outer{
-
+.about-image__outer{
+    background-color: #95e1d3; 
+    position: relative; 
 }
-.about-image-outer:hover .about-image__wrapper img {
+.about-image__outer:hover .about-image__inner img {
     opacity: .1;
     transition: opacity .5s ease-out;
 }
-.about-image-outer:hover .about-image__wrapper{
+.about-image__outer:hover .about-image__inner{
     transform: translate(-10px, -10px);
 }
-.about-image__wrapper{
-    background: linear-gradient(to top, rgba(252, 227, 138) 0%, rgba(243, 129, 129) 100%);
-   
+.about-image__inner{
+    background:url(../images/USERS.png) center no-repeat, linear-gradient(to top, rgba(252, 227, 138) 0%, rgba(243, 129, 129) 100%) ;
+    transition: transform .5s ease-out;    
 }
-.about-image__wrapper img{
+.about-image__inner img{
     transition: opacity .5s ease-out;
+    z-index: 5;
 }
-/* .about-image__wrapper:before{
-    content: 'super team';
+.about-image__text{
     color: #ffffff;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
     position: absolute;
-    text-align: center;
-    background-image: url(../images/USERS.png);
-    background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
-    width: 380px;
-    height: 250px;
+    left: 50%;
+    top: 55%;
+    transform: translateX(-70px);
     z-index: 1;
-} */
+    opacity: 0;
+}
+.about-image__outer:hover .about-image__text {
+    opacity: 1;
+    transition: opacity .5s ease-out;
+}
+                                                                            /* counter */
 .about-counter{
     margin-top: 110px;
     background-color: #95e1d3;
-    height: 270px;
+    color: #ffffff;  
+}
+.counter-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.counter-card {
+    flex: 1 1 0;
+    padding: 70px 0;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    align-self: center;
+    box-sizing: border-box;
+}
+.counter-card:last-child{
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+} 
+.counter-card__number {
+font-size: 72px;
+font-weight: 700;
+margin-bottom: 30px;
+}
+.counter-card__desk {
+font-size: 14px;
+font-weight: 400;
+text-transform: uppercase;
 }
