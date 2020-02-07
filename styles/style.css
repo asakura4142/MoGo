@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body{
     font-family: Montserrat;
@@ -176,10 +177,11 @@ header::before{
                                                                     /* About */
                                                                    
 .section-text__inner{
-    margin: 90px auto 100px;
+    padding-top: 90px;
     text-align: center;
     width: 100%;
     max-width: 955px;
+    margin: 0 auto;
 }
 .section-subtitle{
     font-family: "Kaushan Script";
@@ -210,11 +212,12 @@ header::before{
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
+    padding-bottom: 110px;
 }
 .about-image{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
 }
 .about-image__outer{
     background-color: #95e1d3; 
@@ -228,7 +231,7 @@ header::before{
     transform: translate(-10px, -10px);
 }
 .about-image__inner{
-    background:url(../images/USERS.png) center no-repeat, linear-gradient(to top, rgba(252, 227, 138) 0%, rgba(243, 129, 129) 100%) ;
+    background:url(../images/icon/USERS.png) center no-repeat, linear-gradient(to top, rgba(252, 227, 138) 0%, rgba(243, 129, 129) 100%) ;
     transition: transform .5s ease-out;    
 }
 .about-image__inner img{
@@ -274,12 +277,83 @@ header::before{
     border-right: 1px solid rgba(255, 255, 255, 0.3);
 } 
 .counter-card__number {
-font-size: 72px;
-font-weight: 700;
-margin-bottom: 30px;
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 30px;
 }
 .counter-card__desk {
-font-size: 14px;
-font-weight: 400;
-text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+                                                                        /* Services */
+.services{
+    margin-bottom: 117px;
+}
+.services-card__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}                                                                        
+.services-card {
+    display: flex;
+    margin: 50px auto 50px;
+    width: 30%;
+}
+.services-card img{
+    width: auto;
+    height: 32px;
+}
+.services-card__text {
+    margin-left: 28px;
+}
+.card__title {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.card__desc {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+hr{
+width: 100%;
+height: 1px;
+background-color: #e5e5e5;
+border: none;
+margin: 0;
+}
+                                                                            /* Devices */
+.section {
+    background: url(../images/backgroundDising.png) no-repeat center;
+    position: relative;
+    background-size: auto;
+    /* width: 100%; */
+}
+.section::before{
+    content: '';
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.devices__image{
+    display: flex;
+    justify-content: center;
+}
+.devices__image_iPad{
+    max-width: 100%;
+    height: auto;
+}
+.devices__image_iPhone{
+    position: absolute;
+    bottom: -91px;
+    left: calc(50% + 100px);
 }
