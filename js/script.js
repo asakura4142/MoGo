@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $('.block__title__wrapper').click(function(event){
+        if($('.block__wrapper').hasClass('one')){
+            $('.block__title__wrapper').not($(this)).removeClass('active'); 
+            $('.block__text').not($(this).next()).slideUp(300); 
+        }
+        $(this).toggleClass('active').next().slideToggle(300);
+    });
+});
