@@ -486,3 +486,81 @@ hr{
     background-color: #f38181; 
     vertical-align: middle; 
 }
+                                                                            /*Team*/
+.about-image-item{
+    text-align: center;
+    padding-bottom: 117px;
+}
+.team .about-image__inner{
+    background: linear-gradient(to top, rgba(252, 227, 138) 0%, rgba(243, 129, 129) 100%);
+}
+.about-image__social{
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    transition: opacity .5s ease-out;
+}
+.about-image__social a{
+    background-color: #fce38a;
+    text-decoration: none;
+    padding: 15px;
+    border-right: 1px solid rgba(243, 129, 129, .5);
+    color: #f38181;
+    width: 26px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+}
+.about-image__social a:last-child{
+    border-right:none;
+    
+}
+.about-image__social a:hover{
+    background-color: #f38181;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+}
+.about-image__social a i{
+    font-size: 26px;
+}
+.about-image__outer:hover .about-image__social{
+    opacity: 1;
+    transition: opacity .5s ease-out;
+}
+.team__name {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 30px 0px 15px;
+}
+.team__profession {
+    color: #999999;
+    font-family: "Roboto - Light Italic";
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.logo {
+    background-color: #f8f8f8;
+    height: 250px;  
+}
+.logo .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 100%;  
+}
+.logo__wrap {
+    width: 15%;
+}
+.logo__wrap img{
+   display: inline-block;
+   vertical-align: middle;
+   max-width: 100%;
+   height: auto;
+}
