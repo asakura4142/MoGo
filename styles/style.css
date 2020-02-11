@@ -452,7 +452,6 @@ hr{
     justify-content: center;
     align-items: center;
     height: 100%;
-
 }
 .comments-slider img{
     border: 3px solid #95e1d3;
@@ -470,7 +469,6 @@ hr{
     font-weight: 400;
     line-height: 1.5em;
     margin-bottom: 23px;
-  
 }
 .comment__user {
     color: #333333;
@@ -517,12 +515,11 @@ hr{
 }
 .about-image__social a:last-child{
     border-right:none;
-    
 }
 .about-image__social a:hover{
     background-color: #f38181;
     color: #ffffff;
-    transition: all .5s ease-in-out;
+     transition: all .5s ease-in-out;
 }
 .about-image__social a i{
     font-size: 26px;
@@ -557,10 +554,84 @@ hr{
 }
 .logo__wrap {
     width: 15%;
+    text-align: center;
 }
 .logo__wrap img{
    display: inline-block;
    vertical-align: middle;
    max-width: 100%;
    height: auto;
+}
+                                                                                /* Work  */
+.work{
+    margin-bottom: 90px;
+}
+.picture{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 60px;
+}
+.picture img{
+    width: 100%;
+    height: auto;
+}   
+.picture img:nth-child(3){
+    grid-column-start: 3;
+    grid-row-start: 1; 
+    grid-row-end: 3; 
+}                                                                            
+.work .products-comments{
+    background: inherit;
+}
+.work .products-comments img{
+    border: none;
+}
+
+.work-picture__inner:hover  img {
+    opacity: .1;
+    transition: opacity .5s ease-out;
+    
+}
+
+.work-picture__inner{
+    background:url(../images/icon/picture\ __2.png) center no-repeat, linear-gradient(to top, rgba(252, 227, 138) 0%, rgba(243, 129, 129) 100%) ;
+    transition: transform .5s ease-out; 
+    position: relative;
+  
+}
+.work-picture__inner img{
+    transition: opacity .5s ease-out;
+    z-index: 5;
+}
+.work-picture__text{
+    color: #ffffff;
+    font-family: "Roboto - Light Italic";
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-70px);
+    z-index: 1;
+    /* opacity: 0; */
+  
+}
+.work-picture__title{
+    position: absolute;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-80px);
+    margin: 20px auto 17px;
+    z-index: 1;
+    /* opacity: 0; */
+  }
+.work-picture__inner:hover .work-picture__text {
+    opacity: 1;
+    transition: opacity .5s ease-out;
 }
