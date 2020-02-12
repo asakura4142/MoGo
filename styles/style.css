@@ -84,7 +84,7 @@ header::before{
 }
                                                                             /* /top line */
 .header__subtitle{
-    font-family: "Kaushan Script";
+    font-family: Kaushan Script;
     font-size: 72px;
     font-weight: 400;
     margin: 229px 0 42px 0;
@@ -184,7 +184,7 @@ header::before{
     margin: 0 auto;
 }
 .section-subtitle{
-    font-family: "Kaushan Script";
+    font-family: Kaushan Script;
     font-size: 24px;
     font-weight: 400;
 }
@@ -424,7 +424,7 @@ hr{
     padding:0px 25px 5px 0px;
     margin: 20px 25px;
     font-style: italic;
-    font-family: "Roboto - Light Italic";
+    font-family: Roboto;
     color: #999999;
     font-size: 15px;
     font-weight: 400;
@@ -466,7 +466,7 @@ hr{
 }
 .comment__text {
     color: #999999;
-    font-family: "Roboto - Light Italic";
+    font-family: Roboto;
     font-style: italic;
     font-size: 24px;
     font-weight: 400;
@@ -475,7 +475,7 @@ hr{
 }
 .comment__user {
     color: #333333;
-    font-family: "Kaushan Script";
+    font-family: Kaushan Script;
     font-size: 24px;
     font-weight: 400;
 }
@@ -539,7 +539,7 @@ hr{
 }
 .team__profession {
     color: #999999;
-    font-family: "Roboto - Light Italic";
+    font-family: Roboto;
     font-style: italic;
     font-size: 15px;
     font-weight: 400;
@@ -621,7 +621,7 @@ hr{
     z-index: 1;
   }
 .picture__subtitle{
-    font-family: "Roboto - Light Italic";
+    font-family: Roboto;
     font-style: italic;
     font-size: 15px;
     font-weight: 400;
@@ -640,29 +640,21 @@ hr{
 }
 .clients-commets {
     display: flex;
-   /* flex: 1 1 0; */
-    flex-wrap: wrap;
-    /* align-items: center;  */
-    /* justify-content: space-around; */
-   
+    flex-wrap: wrap;   
 }
 .commet__item {
-     display: flex;
+    display: flex;
     padding: 0 40px 0 55px; 
-    /* padding-left: 50px; */
     width: 50%;
     margin-bottom: 70px;
     box-sizing: border-box;
 }
 .commet__item img{
-    /* display: inline-block; */
     width: auto;
-    /* max-width: 110px; */
     height: 110px;
 }
 .commet__wrap {
     margin-left: 30px;
-    
 }
 .client__name {
     font-size: 14px;
@@ -671,7 +663,7 @@ hr{
     margin:12px auto 15px;
 }
 .client__profession {
-    font-family: "Roboto - Light Italic";
+    font-family: Roboto;
     font-style: italic;
     font-size: 15px;
     font-weight: 400;
@@ -749,7 +741,6 @@ hr{
     line-height: 24px;
     padding:0 30px 20px 0;
     position: relative;
-
 }
 .blog-item__desk::after{
     content: '';
@@ -778,3 +769,34 @@ hr{
     line-height: 24px;
     margin: 0 20px 0 7px;
 }
+                                                                                                    /* Map */
+.map{
+    background: url(../images/backgroundMap.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 57px 0 57px 0;
+    
+} 
+.map img{
+    position: relative;
+    z-index: 5;
+} 
+.map-sudtitle{
+    color: #f38181;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 18px 0 21px 0;
+    position: relative;
+    cursor: pointer;
+}  
+.map-sudtitle::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    transform: translateX(-30px);
+}                                                                                                                                                                                              
