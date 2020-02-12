@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i&display=swap');
 
 body{
     font-family: Montserrat;
@@ -696,3 +696,85 @@ hr{
     font-weight: 400;
     line-height: 24px;
 }                                                                               
+                                                                                        /*Blog */
+.blog{
+    margin-bottom: 119px;
+}                                                                                        
+.blog-items__wrapper {
+    display:flex;
+    justify-content: space-between;
+}
+.blog-item {
+    flex: 1 1 0;
+}
+.blog-item__article{
+    position: relative;
+}
+.blog-item__data {
+    position: absolute;
+    background-color: #95e1d3;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    line-height: 1;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    bottom: 10px;
+    left: -10px;
+}
+.blog-item__data-day{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.blog-item__data-month{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
+}
+.blog-item__title {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 20px 0 20px;
+}
+.blog-item__desk {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    padding:0 30px 20px 0;
+    position: relative;
+
+}
+.blog-item__desk::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 380px;
+    height: 1px;
+    background-color: #e5e5e5;
+}
+.blog-item__footer {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.blog-item__footer img{
+    height: 15px;
+    width: auto;
+}
+.blog-item__status{
+    color: #999999;
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 20px 0 7px;
+}
