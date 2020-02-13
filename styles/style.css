@@ -803,29 +803,37 @@ hr{
                                                                                             /* Footer  */
 footer{
    background: #f8f8f8;
-   
 }                                                                                            
 .footer__inner {
     display: flex;
     justify-content: space-between;
-    padding: 74px 0px 21px 0px;   
+    padding: 70px 0px 70px 0px;   
+    position: relative;
+}
+.footer__inner::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 1200px;
+    height: 1px;
+    background-color: #e5e5e5;
 }
 footer .footer-items:last-child{
     margin-right: 0;  
 }
 .footer-items{
     margin-right: 40px;
-/* flex: 1 1 0; */
 }
 .footer-text {
-    /* flex-grow: 1; */
     width: 40%;
 }
 .footer__logo {
     color: #cccccc;
     font-size: 46px;
     font-weight: 700;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
 }
 .footer__desk {
     color: #999999;
@@ -833,10 +841,9 @@ footer .footer-items:last-child{
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .footer__follower {
-  
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 18px;
@@ -925,11 +932,8 @@ input[type=submit]{
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 15px;
     border: none;
-    overflow: hidden;
     box-sizing: border-box;
-
 }
 .footer-blog__text-data {
     color: #999999;
@@ -941,7 +945,6 @@ input[type=submit]{
 }
 .footer-instagran {
     width: 22%;
-   
 }
 .footer-instagran-title {
     font-size: 14px;
@@ -955,10 +958,19 @@ input[type=submit]{
     margin-bottom: 20px;
 }
 .instagram__text {
-color: #333333;
-font-family: "Roboto - Light Italic";
-font-size: 13px;
-font-weight: 300;
-line-height: 24px;
-font-style: italic;
-}                                                                                                                                                                                    */
+    color: #333333;
+    font-family: "Roboto - Light Italic";
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 24px;
+    font-style: italic;
+}      
+.footer__text{
+font-size: 14px;
+font-weight: 400;
+margin: 24px auto 24px;
+text-align: center;
+}   
+.footer__text span{
+    color: #f38181;
+}                                                                                                                                                                        
