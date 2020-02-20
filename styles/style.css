@@ -51,11 +51,11 @@ header::before{
     z-index: 10;
     top: 0;
     left: 0;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 .mask {
     position: fixed;
@@ -76,6 +76,8 @@ header::before{
     left: 10px;
     width: 15px;
     height: 20px;
+    z-index: 20;
+    cursor: pointer;
 } 
 .close-menu::before,
 .close-menu::after{
@@ -94,10 +96,6 @@ header::before{
 .close-menu::after{
     transform: rotate(-45deg);
     bottom: 9px;
-}
-.menu__title{
-    text-align: center;
-    color: honeydew;
 }
 .header__logo{
     font-size: 30px;
@@ -1075,11 +1073,7 @@ input[type=submit]:hover{
         z-index: 10;
         cursor: pointer;
     }
-    .header_burger:hover span,
-    .header_burger:hover:before,
-    .header_burger:hover:after{
-        background-color: #fce38a;
-    }
+    
     .header_burger span{
         position: absolute;
         background-color:#fff;
@@ -1087,7 +1081,6 @@ input[type=submit]:hover{
         width: 100%;
         height: 2px;
         top: 9px;
-        transition: all 0.3s ease 0s;
     }
     .header_burger::before,
     .header_burger::after{
@@ -1097,7 +1090,6 @@ input[type=submit]:hover{
         width: 100%;
         height: 2px;
         left: 0; 
-        transition: all 0.3s ease 0s;
     }  
     .header_burger::before{
         top: 0;
@@ -1115,77 +1107,50 @@ input[type=submit]:hover{
         background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
         opacity: 0.9;
         overflow: hidden;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
         top: 0;
         width: 60%;
         height: 100%;
         right: -60%;
     }
-      /* .menu ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      .menu li {
-        display: block;
+    .menu__title{
         text-align: center;
-        border-bottom: solid 1px #3184a1;
-      }
-      .menu li:last-child {
-        border-bottom: none;
-      }
-      .menu a {
-        display: block;
-        padding: 10px;
-        font-size: 18px;
-        font-weight: 300;
         color: #fff;
-      } */
-      .menu ul li{
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        border-bottom: 2px solid  #f38181;;
+        margin: 20px auto;
+    }
+    .menu ul{
+        margin: auto;
+        height: 100%;
+    }
+    .menu ul li{
         display: block;
-        margin-right:57px;
+        margin-bottom:20px;
         font-size: 14px;
         font-weight: 400;
         text-transform: uppercase;
         padding-bottom: 12px;
-        transition: all .5s ease-in-out;
         position: relative;
         text-align: center;
-    }
-    .menu ul li:hover{
-        color: #fce38a;
-        transition: all .5s ease-in-out;
-    }
-    .menu ul li::after{
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 3px;
-        background-color: #fce38a;
-        opacity: 0;
-        transition: all .5s ease-in-out;
-    }
-    .menu ul li:hover::after{
-        opacity: 1;
-        transition: all .5s ease-in-out;
     }
     .menu ul li a{
         text-decoration: none;
         color:#fff;
     }
-      body.pmr-open nav.push-menu-right {
+    body.pmr-open nav.push-menu-right {
         right: 0;
-      }
-      body.pmr-open #wrapper {
+    }
+    body.pmr-open #wrapper {
         left: -300px;
-      }
+    }
 }                                                                                                                                                
 @media (max-width: 575px)   {
 
