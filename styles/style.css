@@ -9,14 +9,9 @@ body{
 }
                                                                             /* Header */
 header{
-    background: url(../images/background.png)  no-repeat center ;
+    background: url(../images/background.png)  no-repeat 50% 50% ;
     background-size: cover;
     width: 100%;
-    height: 100vh;
-    min-height: 820px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     color: #ffffff;  
     position: relative; 
 }
@@ -39,15 +34,22 @@ header::before{
     z-index: 2;
     box-sizing: border-box;
 }
+.header__wrap{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
                                                                             /* top line */
 .top__line{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 20px;
+    margin-top: 20px;
+    flex-shrink: 1;
+/*     
     width: 100%;
-    max-width: 1200px;
-    position: fixed;
+    max-width: 1200px; */
+    /* position: fixed; */
 }
 #wrapper {
     position: relative;
@@ -153,8 +155,9 @@ header::before{
     font-family: "Kaushan Script";
     font-size: 72px;
     font-weight: 400;
-    margin: 80px 0 42px 0;
     text-align: center;
+    margin-bottom: 42px;
+
 }
 .header__title{
     font-size: 150px;
@@ -164,12 +167,16 @@ header::before{
     padding-bottom: 60px;
     text-align: center;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .header__inner{
     width: 100%;
     max-width: 806px;
     margin: 0 auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .header__title::after{
     content: '';
@@ -202,7 +209,8 @@ header::before{
 }
                                                                             /* header slider*/
 .header__slider{
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    flex-shrink: 1;
 }
 .header__slider ul{
     display: flex;
@@ -1071,13 +1079,9 @@ input[type=submit]:hover{
                                                                             /* Header */
     .header__subtitle{
         font-size: 60px;
-        margin: 190px 0 32px 0;
     }
     .header__title{
         font-size: 120px;
-    }
-    .header__slider{
-        margin-top: 140px;
     }
                                                                             /* About*/
     .section-text{
@@ -1094,6 +1098,17 @@ input[type=submit]:hover{
     .counter-card:nth-child(3){
         border-right: 1px solid rgba(255, 255, 255, 0.3);
     } 
+                                                                                /* Services */
+    .services{
+        margin-bottom: 60px;
+    }                                                               
+    .services-card {
+        margin: 30px auto 30px;
+        width: 40%;
+    }
+    hr{
+        display: none;
+    }
                                                                                 /*Products*/
      .products-cards_inner{
         margin-bottom: 30px;
@@ -1226,20 +1241,25 @@ input[type=submit]:hover{
     body.pmr-open #wrapper {
         left: -300px;
     }
-}                                                            
+}       
+@media (max-width: 850px )  and (min-width: 769px)  {    
+                                                                            /* About */  
+    .about-image__text{
+        font-size: 15px;
+        /* width: 100%; */
+        margin: 5px;
+    }
+
+}                                                     
  @media (max-width: 770px)   {    
                                                                             /* Header */                                                                     
     .header__subtitle{
         font-size: 48px;
-        margin: 140px 0 28px 0;
     }
     .header__title{
         font-size: 75px;
         padding-bottom: 40px;
         line-height: 1;
-    }
-    .header__slider{
-        margin-top: 100px;
     }
     .slider-text {
         display: none;
@@ -1266,17 +1286,17 @@ input[type=submit]:hover{
     .about-counter{
         margin-top: 60px;
     }
-                                                                            /* Services */
-    .services{
-        margin-bottom: 60px;
-    }                                                               
-    .services-card {
-        margin: 30px auto 30px;
-        width: 40%;
+                                                                              /* Devices */
+
+    .devices__image{
+    padding: 0 40px 0 40px;
     }
-    hr{
-     display: none;
+    
+    .devices__image_iPhone{
+        left: calc(50% + 80px);
+        max-width: 200px;
     }
+
                                                                                /*Products */
     .products-cards_inner{
         flex-direction: column;
@@ -1381,48 +1401,32 @@ input[type=submit]:hover{
         border:0;
         border-bottom:1px solid rgba(255, 255, 255, 0.3) ;
         padding: 20px 0;
+        width: 100%;
     }
     .counter-card:nth-child(3),
     .counter-card:last-child{
         border-right:0;
     }    
-                                                                            /* Services */
+                                                                              /* Services */
     .services-card__inner{
      flex-direction: column;
     } 
     .services-card {
         width: 80%;
+        margin: 20px auto 20px;
+    }
+    .card__title {
+        margin-bottom: 15px;
     }
                                                                             /* Devices */
-    .devices{
-        background: url(../images/backgroundDising.png) no-repeat center;
-        background-size: cover;
-    }                                                                          
-    .section {
-        position: relative;  
-        width: 100vw;
+
+     .devices__image{
+       padding: 0 60px 0 60px;
     }
-    .section::before{
-        content: '';
-        background-color: rgba(255, 255, 255, 0.85);
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-    .devices__image{
-        display: flex;
-        justify-content: center;
-        padding: 0 50px 0 50px;
-    }
-    .devices__image_iPad{
-        max-width: 100%;
-        height: auto;
-    }
+    
     .devices__image_iPhone{
         left: calc(50% + 80px);
-        max-width: 200px;
+        max-width: 180px;
     }
                                                                                /*Team */
 
@@ -1451,8 +1455,7 @@ input[type=submit]:hover{
     .footer-instagran {
         width: 30%;
     }   
-                                                                                   /* Footer  */
-    .footer-blog {
+      .footer-blog {
         width: 55%;
     }
     .footer-instagran {
@@ -1462,15 +1465,36 @@ input[type=submit]:hover{
         grid-template-columns: repeat(2, 1fr);
     }                                                    
 }         
+@media (max-width: 530px){
+                                                                         /* Devices */
+    .devices__image_iPhone{
+        left: calc(50% + 80px);
+        max-width: 160px;
+    }
+}
 @media (max-width: 500px){
+                                                                                /* Header */
     .header__subtitle{
         font-size: 42px;
     }
     .header__title{
         font-size: 68px;
     }
-}                                                                                                                                      
+                                                                                /* About */
+    .about-image__text{
+        font-size: 15px;
+        margin: 5px;
+    }
+}   
+@media (max-width: 480px){
+    /* Devices */
+    .devices__image_iPhone{
+    left: calc(50% + 60px);
+    max-width: 140px;
+    }
+}                                                                                                                                   
 @media (max-width: 430px){
+    /* Header */
     .header__subtitle{
         font-size: 36px;
         margin: 100px 0 20px 0
@@ -1488,4 +1512,60 @@ input[type=submit]:hover{
     .slider-number{
         font-size: 18px;
     }
-}                                                                                                                                      
+    /* About */
+    .section-text__inner{
+        padding-top: 35px;
+        font-size: 15px;
+    }
+    .section-title{
+        margin: 20px 0 20px;
+        padding-bottom: 22px;
+        font-size: 20px;
+    }
+    .section-text{
+        padding-bottom: 25px;
+    }
+    .about-counter {
+        margin-top: 40px;
+    }
+    .about-image__text{
+        transform: translateX(-60px);
+        font-size: 12px;
+    }
+    .counter-card__number {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    .counter-card__desk {
+        font-size: 12px;
+    }
+    .counter-card {
+        padding: 10px 0;
+        }
+                                                                                   /* Services */
+    .services-card {
+        width: 100%;
+        margin: 15px auto 15px;
+    }
+    .card__title {
+        margin-bottom: 10px;
+    }
+    .services-card img {
+        width: auto;
+        height: 25px;
+    }
+        /* Devices */
+        .devices__image_iPhone{
+            left: calc(50% + 40px);
+            max-width: 120px;
+            }
+}
+ 
+@media (max-width: 350px){
+     /* Devices */
+     .devices__image_iPhone{
+        left: calc(50% + 40px);
+        max-width: 100px;
+        }
+     } 
+                                                                                                                                  
