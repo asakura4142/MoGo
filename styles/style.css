@@ -438,8 +438,10 @@ hr{
 }
 .devices__image_iPhone{
     position: absolute;
-    bottom: -91px;
+    bottom: -50px;
     left: calc(50% + 100px);
+    max-width: 100%;
+    height: auto;
 }
                                                                             /*Products */
 .products-cards_inner{
@@ -535,6 +537,9 @@ hr{
 .products-comments {
     height: 290px;
     background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 0;
 }
 .comments-slider {
     display: flex;
@@ -1241,17 +1246,31 @@ input[type=submit]:hover{
     body.pmr-open #wrapper {
         left: -300px;
     }
-}       
+                                                                               /*Products */
+    .products-cards_inner {
+        display: flex;
+        margin-bottom: 80px;
+        height: 100%;
+    }
+  
+} 
+@media (max-width: 930px) and (min-width: 769px){  
+                                                                                /*Team */
+    .about-image__social a {
+    padding: 10px;
+    }
+    .about-image__social a i{
+    font-size: 22px;
+    }
+}        
 @media (max-width: 850px )  and (min-width: 769px)  {    
                                                                             /* About */  
     .about-image__text{
         font-size: 15px;
-        /* width: 100%; */
         margin: 5px;
     }
-
-}                                                     
- @media (max-width: 770px)   {    
+}                                              
+ @media (max-width: 770px)  {    
                                                                             /* Header */                                                                     
     .header__subtitle{
         font-size: 48px;
@@ -1287,16 +1306,13 @@ input[type=submit]:hover{
         margin-top: 60px;
     }
                                                                               /* Devices */
-
     .devices__image{
     padding: 0 40px 0 40px;
     }
-    
     .devices__image_iPhone{
         left: calc(50% + 80px);
         max-width: 200px;
     }
-
                                                                                /*Products */
     .products-cards_inner{
         flex-direction: column;
@@ -1326,7 +1342,7 @@ input[type=submit]:hover{
     }
                                                                             /*Team */
     .about-image-item{
-        padding-bottom: 40px;
+        padding: 30px;
         width: 60%;
     }  
     .logo .wrapper{
@@ -1337,7 +1353,7 @@ input[type=submit]:hover{
     }
     .logo__wrap{
         width: 30%;
-        margin-bottom: 20px;
+        margin: 20px 0 20px 0;
     }    
                                                                             /*Work*/
     .work{
@@ -1349,8 +1365,8 @@ input[type=submit]:hover{
     }
     .picture .picture__inner:nth-child(3){
         grid-column-start: 1; 
-    grid-row-start: 3;
-    grid-row-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
     }
                                                                             /*Clients*/
     .clients{
@@ -1419,17 +1435,29 @@ input[type=submit]:hover{
         margin-bottom: 15px;
     }
                                                                             /* Devices */
-
      .devices__image{
-       padding: 0 60px 0 60px;
+      max-width: 320px;
     }
-    
     .devices__image_iPhone{
-        left: calc(50% + 80px);
+        left: calc(50% + 20px);
         max-width: 180px;
     }
-                                                                               /*Team */
+                                                                            /* Products */
+    .comments-slider{
+        display: block;
+    }
+    .comments-slider img{
+        display: block;
+       margin:0 auto 15px;
+    }
+    .comment__text {
+        margin-bottom: 15px;
+    }
 
+                                                                               /*Team */
+    .about-image-item{
+    padding: 20px;
+    }                                                                            
     .logo__wrap{
         width: 50%;
     }      
@@ -1445,6 +1473,12 @@ input[type=submit]:hover{
     .picture__subtitle{
         font-size: 14px;
     }    
+   .about-image__social a {
+    padding: 10px;
+    }
+    .about-image__social a i{
+    font-size: 22px;
+    }
                                                                                    /* Footer  */
     footer{
     padding-top: 50px;
@@ -1465,13 +1499,6 @@ input[type=submit]:hover{
         grid-template-columns: repeat(2, 1fr);
     }                                                    
 }         
-@media (max-width: 530px){
-                                                                         /* Devices */
-    .devices__image_iPhone{
-        left: calc(50% + 80px);
-        max-width: 160px;
-    }
-}
 @media (max-width: 500px){
                                                                                 /* Header */
     .header__subtitle{
@@ -1486,13 +1513,7 @@ input[type=submit]:hover{
         margin: 5px;
     }
 }   
-@media (max-width: 480px){
-    /* Devices */
-    .devices__image_iPhone{
-    left: calc(50% + 60px);
-    max-width: 140px;
-    }
-}                                                                                                                                   
+                                                                                                                                  
 @media (max-width: 430px){
     /* Header */
     .header__subtitle{
@@ -1555,13 +1576,54 @@ input[type=submit]:hover{
         height: 25px;
     }
         /* Devices */
-        .devices__image_iPhone{
-            left: calc(50% + 40px);
-            max-width: 120px;
-            }
+    .devices__image{
+        max-width: 80%;
+    }
+    .devices__image_iPhone{
+        left:calc(50% + 50px);
+        max-width: 140px;
+    } 
+                                                                                /*Team */
+    .about-image-item{
+        padding: 10px;
+    }                                                                            
+    .logo__wrap{
+        width: 30%;
+    }      
+    .picture__text{ 
+            margin-top: 15px;
+      }
+      .team__name{
+        margin: 15px 0px 10px;
+      }
+    .about-image__social a {
+    padding: 8px;
+    }
+    .about-image__social a i{
+    font-size: 18px;
+    }
 }
  
-@media (max-width: 350px){
+@media (max-width: 400px){
+     /* Devices */
+     .devices__image_iPhone{
+        left: calc(50% + 40px);
+        max-width: 120px;
+        }
+        /* Products */
+        .block__title__wrapper  img{
+            display: none;
+        }
+        .comments__wrap {
+           width: 100%;
+           margin: 0;
+        }
+        .comment__text {
+            margin-bottom: 10px;
+        }
+        
+     } 
+@media (max-width: 330px){
      /* Devices */
      .devices__image_iPhone{
         left: calc(50% + 40px);
