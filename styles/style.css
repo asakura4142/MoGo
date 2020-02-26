@@ -1008,7 +1008,6 @@ input[type=submit]{
 input[type=submit]:hover{
     background-color: #53bba8;
     transition:background-color .6s linear;
-
 }
 .footer-blog {
     width: 29%;
@@ -1079,6 +1078,10 @@ input[type=submit]:hover{
     .header__title{
         font-size: 138px;
     }
+                                                                                 /* Footer  */       
+    .footer-instagran {
+    width: auto;
+    }
 }                                                                                                                                                 
 @media (max-width: 990px)   {
                                                                             /* Header */
@@ -1137,6 +1140,15 @@ input[type=submit]:hover{
     .about-image-item{
         padding-bottom: 60px;
     } 
+                                                                                /*Clients*/
+   .clients{
+       padding-bottom: 50px;
+   }                                                                         
+    .commet__item {
+        padding: 0 20px 0 35px;
+        width: 50%;
+        margin-bottom: 50px;
+    }
                                                                                  /* Footer  */                                                                                          
     .footer__inner {
         flex-wrap: wrap;
@@ -1151,9 +1163,7 @@ input[type=submit]:hover{
     .footer-blog {
         width: 50%;
     }
-    .footer-instagran {
-        width: 30%;
-    }
+    
 }                                        
 @media (max-width: 930px){   
                                                                             /* Header */
@@ -1377,7 +1387,7 @@ input[type=submit]:hover{
     }
     .commet__item{
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
     .commet__item img{
         align-self: center;
@@ -1401,13 +1411,18 @@ input[type=submit]:hover{
         padding: 0;
     }  
                                                                                    /* Footer  */
+    .footer-inner{       
+        justify-content: center;
+        text-align: center;
+    }                                                                       
     .footer-blog {
-        width: 50%;
+        width: 100%;
+        margin-bottom: 30px;
     }
-    .footer-instagran {
-        width: 35%;
+    .instagram__images {
+        display: block;
     }
-}                                                                                                                                                
+   }                                                                                                                                                
 @media (max-width: 575px){
                                                                             /* About */           
     .counter-inner{
@@ -1479,25 +1494,27 @@ input[type=submit]:hover{
     .about-image__social a i{
     font-size: 22px;
     }
+                                                                             /*Clients*/
+    .commet__item {
+        margin-bottom: 30px;
+    }   
+    .commet__item img {
+        height: 80px;
+    }    
+    .client__name {
+        margin: 8px auto 10px;
+    }       
+    .client__profession {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }                                                          
                                                                                    /* Footer  */
     footer{
     padding-top: 50px;
     }                                                                                            
-    .footer-blog {
-        width: 50%;
+    .footer__text {
+        font-size: 10px;
     }
-    .footer-instagran {
-        width: 30%;
-    }   
-      .footer-blog {
-        width: 55%;
-    }
-    .footer-instagran {
-        width: 33%;
-    }
-    .instagram__images {
-        grid-template-columns: repeat(2, 1fr);
-    }                                                    
 }         
 @media (max-width: 500px){
                                                                                 /* Header */
@@ -1602,6 +1619,23 @@ input[type=submit]:hover{
     .about-image__social a i{
     font-size: 18px;
     }
+    /* Clients */
+    .commet__item {
+        display: block;
+        padding: 0 5px 0 5px;
+    }
+    .commet__item img {
+        display: block;
+        margin: 0 auto 20px;
+    }
+    .commet__wrap{
+        width: 100%;
+        margin-left: 0;
+    }
+/* Footer */
+.footer__inner{
+    padding-bottom: 30px;
+}
 }
  
 @media (max-width: 400px){
