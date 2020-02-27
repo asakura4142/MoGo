@@ -46,10 +46,6 @@ header::before{
     align-items: center;
     margin-top: 20px;
     flex-shrink: 1;
-/*     
-    width: 100%;
-    max-width: 1200px; */
-    /* position: fixed; */
 }
 #wrapper {
     position: relative;
@@ -703,9 +699,10 @@ hr{
     top: 50%;
     left: 50%;
     margin-top: 35px;
-    transform: translate(-82px);
+    transform: translate(-50%);
     transition: opacity .5s ease-out;
     opacity: 0;
+    width: 100%;
 }
 .picture__title{
     font-size: 14px;
@@ -1149,6 +1146,20 @@ input[type=submit]:hover{
         width: 50%;
         margin-bottom: 50px;
     }
+                                                                                /*Work*/
+    .picture__text{
+        margin-top: 25px;
+       
+    }
+    .picture__title {
+        margin-bottom: 8px; 
+        font-size: 12px;
+    }
+    .picture__subtitle{
+        font-size: 12px;
+
+    }
+
                                                                                  /* Footer  */                                                                                          
     .footer__inner {
         flex-wrap: wrap;
@@ -1218,9 +1229,11 @@ input[type=submit]:hover{
         -o-transition: all 0.5s;
         transition: all 0.5s;
         top: 0;
-        width: 60%;
+        width: 80%;
+        min-width: 240px;
+        max-width: 440px;
         height: 100%;
-        right: -60%;
+        right: -80%;
     }
     .menu__title{
         text-align: center;
@@ -1478,12 +1491,11 @@ input[type=submit]:hover{
     }      
     .picture__text{ 
          margin-top: 25px;
-        transform: translate(-70px);
+        transform: translate(-50%);
     }
     .picture__title{
         font-size: 12px; 
         margin-bottom: 8px;
-        line-height:15px;
     }
     .picture__subtitle{
         font-size: 14px;
@@ -1631,6 +1643,14 @@ input[type=submit]:hover{
     .commet__wrap{
         width: 100%;
         margin-left: 0;
+    }
+    /* Work */
+    .picture {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .picture__title {
+        margin-top: 10px;
+        /* font-size: 20px; */
     }
 /* Footer */
 .footer__inner{
