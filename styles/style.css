@@ -57,6 +57,7 @@ header::before{
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    overflow: hidden;
 }
 .mask {
     position: fixed;
