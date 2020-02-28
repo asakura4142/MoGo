@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
                                                             <!--push menu -->
@@ -44,10 +44,10 @@
                                                                                     <!--/push menu -->
     <div id="wrapper">      
                                                                                     <!-- Header -->
-        <header>
+        <header id="header">
             <div class="wrapper">
                 <div class="header__wrap">                                                                       <!-- top line -->
-                    <div class="top__line">
+                    <div class="top__line" id="topLine">
                         <p class="header__logo">MoGo</p>
                         <div class="header_burger">
                             <span>   
@@ -56,19 +56,19 @@
                         <nav class="header__nav">
                             <ul class="header_list">
                                 <li>
-                                    <a href="#" >About</a>
+                                    <a href="#about">About</a>
                                 </li>
                                 <li>
-                                    <a href="#" >service</a>
+                                    <a href="#service">service</a>
                                 </li>
                                 <li>
-                                    <a href="#">work</a>
+                                    <a href="#work">work</a>
                                 </li>
                                 <li>
-                                    <a href="#">blog</a>
+                                    <a href="#blog">blog</a>
                                 </li>
                                 <li>
-                                    <a href="#">contact</a>
+                                    <a href="#contact">contact</a>
                                 </li>
                                 <li>
                                     <a href="#"><img src="images/icon/shoppingCart.png"> </a>
@@ -113,7 +113,7 @@
             </div>
         </header>
                                                                                     <!-- About -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper">
                 <div class="section-text__inner">
                     <h3 class="section-subtitle">What we do</h3>
@@ -171,7 +171,7 @@
             </div>
         </section>
                                                                                     <!-- Services -->
-        <section class="services">
+        <section class="services" id="services">
             <div class="wrapper">
                 <div class="section-text__inner">
                     <h3 class="section-subtitle">We work with</h3>
@@ -300,16 +300,34 @@
             </div>  
             <div class="products-comments">
                 <div class="wrapper">
-                    <div class="comments-slider">
-                        <img src="images/icon/speech.png" alt="icon">
-                        <div class="comments__wrap">
-                            <p class="comment__text">
-                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Ut enim ad minim veniam, quis nostrud exercitation.”
-                            </p>
-                            <p class="comment__user">
-                                Jon Doe
-                            </p>   
+                    <div data-slider>
+                        <div>
+                            <div class="comments-slider">
+                                <img src="images/icon/speech.png" alt="icon">
+                                <div class="comments__wrap">
+                                    <p class="comment__text">
+                                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation.”
+                                    </p>
+                                    <p class="comment__user">
+                                        Jon Doe
+                                    </p>   
+                                </div>  
+                             </div>
+                        </div>
+                        <div>
+                            <div class="comments-slider">
+                                <img src="images/icon/speech.png" alt="icon">
+                                <div class="comments__wrap">
+                                    <p class="comment__text">
+                                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation.”
+                                    </p>
+                                    <p class="comment__user">
+                                        Jon Doe
+                                    </p>   
+                                </div>  
+                             </div>
                         </div>
                     </div>       
                 </div>
@@ -421,7 +439,7 @@
             </div>
         </section>      
                                                                                     <!-- Work -->
-        <section class="work">
+        <section class="work" id="work">
             <div class="wrapper">
                 <div class="section-text__inner">
                     <h3 class="section-subtitle">What we do</h3>
@@ -481,19 +499,37 @@
                     </div>
                 </div>    
             </div> 
-            <div class="wrapper">
+            <div class="wrapper">             
                 <div class="products-comments">
-                    <div class="comments-slider">
-                        <img src="images/userpic_1.png" alt="userpic">
-                        <div class="comments__wrap">
-                            <p class="comment__text">
-                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Ut enim ad minim veniam, quis nostrud exercitation.”
-                            </p>
-                            <p class="comment__user">
-                                Joshua Earle
-                            </p>   
-                        </div>
+                    <div data-slider>
+                        <div> 
+                            <div class="comments-slider">
+                                <img src="images/userpic_1.png" alt="userpic">
+                                <div class="comments__wrap">
+                                    <p class="comment__text">
+                                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation.”
+                                    </p>
+                                    <p class="comment__user">
+                                        Joshua Earle
+                                    </p>   
+                                </div>
+                            </div>
+                        </div> 
+                        <div> 
+                            <div class="comments-slider">
+                                <img src="images/userpic_1.png" alt="userpic">
+                                <div class="comments__wrap">
+                                    <p class="comment__text">
+                                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation.”
+                                    </p>
+                                    <p class="comment__user">
+                                        Joshua Earle
+                                    </p>   
+                                    </div>        
+                            </div>
+                        </div> 
                     </div>
                 </div>
             </div>    
@@ -550,7 +586,7 @@
                 </div> 
         </section>    
                                                                                     <!--Blog -->
-        <section class="blog">
+        <section class="blog" id="blog">
             <div class="wrapper">
                 <div class="section-text__inner">
                     <h3 class="section-subtitle">Our stories</h3>
@@ -620,7 +656,7 @@
             <h3 class="map-sudtitle">Open map</h3>
         </section> 
                                                                                     <!--Footer-->
-        <footer>
+        <footer id="contact">
             <div class="wrapper">
                 <div class="footer__inner">
                     <div class="footer-text footer-items">
@@ -692,7 +728,9 @@
         </footer>
     </div>    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/accardion.js"></script>                                                                                          
     <script src="js/pushMenu.js"></script>                                                                                          
+    <script src="js/fixedHeader.js"></script>                                                                                          
 </body>
 </html>
