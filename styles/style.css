@@ -7,6 +7,42 @@ body{
     color: #333333;
     overflow-x: hidden;
 }
+                                                                            /* Top Button*/
+#button {
+    display: inline-block;
+    background-color:#B4EAE0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s; 
+    opacity: 0; 
+    visibility: hidden;
+    z-index: 1000;
+}
+.fa-chevron-up {
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+#button.show:hover {
+    cursor: pointer;
+    background-color: #f38181;
+    opacity: 1;
+}
+#button:hover  .fa-chevron-up{
+    color: #fff;
+}
+#button:active {
+background-color: #C26767;
+}
+#button.show {
+opacity: 0.7;
+visibility: visible;
+} 
                                                                             /* Header */
 header{
     background: url(../images/background.png)  no-repeat 50% 50% ;
@@ -1362,7 +1398,19 @@ input[type=submit]:hover{
         margin: 5px;
     }
 }                                              
- @media (max-width: 770px)  {    
+ @media (max-width: 770px)  {  
+                                                                            /* Top Button*/
+    #button {       
+        width: 35px;
+        height: 35px;
+        bottom: 30px;
+        right: 10px;   
+    }  
+    .fa-chevron-up {
+        font-size: 1em;
+        line-height: 35px;
+        color: #fff;
+    }
                                                                             /* Header */                                                                     
     .header__subtitle{
         font-size: 48px;
