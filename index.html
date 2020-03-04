@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MOGO</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/reset.css">   
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="styles/magnific-popup.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
                                                             <!--push menu -->
@@ -19,19 +20,19 @@
         <p class="menu__title">Menu</p> 
         <ul>
             <li>
-                    <a href="#" >About</a>
+                    <a href="#about" >About</a>
                 </li>
                 <li>
-                    <a href="#" >service</a>
+                    <a href="#service">service</a>
                 </li>
                 <li>
-                    <a href="#">work</a>
+                    <a href="#work">work</a>
                 </li>
                 <li>
-                    <a href="#">blog</a>
+                    <a href="#blog">blog</a>
                 </li>
                 <li>
-                    <a href="#">contact</a>
+                    <a href="#contact">contact</a>
                 </li>
                 <li>
                     <a href="#"><img src="images/icon/shoppingCart.png"> </a>
@@ -171,7 +172,7 @@
             </div>
         </section>
                                                                                     <!-- Services -->
-        <section class="services" id="services">
+        <section class="services" id="service">
             <div class="wrapper">
                 <div class="section-text__inner">
                     <h3 class="section-subtitle">We work with</h3>
@@ -448,51 +449,66 @@
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div> 
             </div>    
-            <div class="picture"> 
+            <div class="picture">  
                 <div class="picture__inner">
-                    <img src="images/work __1.jpg" alt="work">
+                    <a href="images/work __1.jpg"> 
+                        <img src="images/work __1.jpg" alt="work">
+                    </a> 
                     <div class="picture__text">
                         <p class="picture__title"> creatively designed</p>
                         <p class="picture__subtitle">Lorem ipsum dolor sit</p>  
                     </div>
-                </div>           
+                </div>    
+                  
                 <div class="picture__inner">
+                    <a href="images/work__3.jpg"> 
                     <img src="images/work__3.jpg" alt="work">
+                    </a>
                     <div class="picture__text">
                         <p class="picture__title"> creatively designed</p>
                         <p class="picture__subtitle">Lorem ipsum dolor sit</p>  
                     </div>
                 </div>    
                 <div class="picture__inner">   
-                    <img src="images/work__5.jpg" alt="work">
+                    <a href="images/work__5.jpg"> 
+                        <img src="images/work__5.jpg" alt="work">
+                    </a>
                     <div class="picture__text">
                         <p class="picture__title"> creatively designed</p>
                         <p class="picture__subtitle">Lorem ipsum dolor sit</p>  
                     </div>
                 </div>    
                 <div class="picture__inner">   
-                    <img src="images/work __6.jpg" alt="work">
+                    <a href="images/work __6.jpg"> 
+                        <img src="images/work __6.jpg" alt="work">
+                    </a>    
                     <div class="picture__text">
                         <p class="picture__title"> creatively designed</p>
                         <p class="picture__subtitle">Lorem ipsum dolor sit</p>  
                     </div>
                 </div>    
                 <div class="picture__inner">
-                    <img src="images/work__2.jpg" alt="work"> 
+                    <a href="images/work__2.jpg"> 
+                        <img src="images/work__2.jpg" alt="work"> 
+                    </a>    
                     <div class="picture__text">
                         <p class="picture__title"> creatively designed</p>
                         <p class="picture__subtitle">Lorem ipsum dolor sit</p>  
                     </div>
                 </div>    
                 <div class="picture__inner">
-                    <img src="images/work__4.jpg" alt="work"> 
+                    <a href="images/work__4.jpg"> 
+                        <img src="images/work__4.jpg" alt="work"> 
+                    </a>
                     <div class="picture__text">
                         <p class="picture__title"> creatively designed</p>
                         <p class="picture__subtitle">Lorem ipsum dolor sit</p>  
                     </div>
                 </div>    
                 <div class="picture__inner">
+                    <a href="images/work__7.jpg"> 
                     <img src="images/work__7.jpg" alt="work"> 
+                    </a>
                     <div class="picture__text">
                         <p class="picture__title"> creatively designed</p>
                         <p class="picture__subtitle">Lorem ipsum dolor sit</p>  
@@ -731,6 +747,8 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/accardion.js"></script>                                                                                          
     <script src="js/pushMenu.js"></script>                                                                                          
-    <script src="js/fixedHeader.js"></script>                                                                                          
+                                                                                            
+    <script src="js/jquery.magnific-popup.min.js"></script>    
+    <script src="js/fixedHeader.js"></script>                                                                                      
 </body>
 </html>

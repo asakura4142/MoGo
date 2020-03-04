@@ -760,6 +760,38 @@ hr{
     opacity: 1;
     transition: opacity .5s ease-out;
 }
+                                                                                /* Magnific popup */
+.mfp-bottom-bar {
+    display: none;
+}
+.mfp-zoom-out-cur{
+    cursor: auto;
+}
+/* start state */
+.mfp-with-anim {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transform-style: preserve-3d;
+    transform: rotateY(-60deg);
+}
+.mfp-bg {
+    transition: all 0.5s;
+}
+/* animate in */
+.mfp-ready .mfp-with-anim {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+.mfp-ready .mfp-bg {
+    opacity: 0.8;
+}
+ .mfp-removing .mfp-with-anim {
+    transform: rotateY(60deg);
+    opacity: 0;
+}
+.mfp-removing .mfp-bg {
+    opacity: 0;
+}                                                                         
                                                                                 /* Clients */
 .clients {
     background: url(../images/backgroundClients.jpg) no-repeat center;
