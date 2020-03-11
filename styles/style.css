@@ -45,6 +45,7 @@ body{
 } 
                                                                             /* Header */
 header{
+    background: url(../images/backgroundMap.jpg)  no-repeat 50% 50% ;
     background: url(../images/background.webp)  no-repeat 50% 50% ;
     background-size: cover;
     width: 100%;
