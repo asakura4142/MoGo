@@ -37,11 +37,11 @@ body{
     color: #fff;
 }
 #button:active {
-background-color: #C26767;
+    background-color: #C26767;
 }
 #button.show {
-opacity: 0.7;
-visibility: visible;
+    opacity: 0.7;
+    visibility: visible;
 } 
                                                                             /* Header */
 header{
@@ -191,7 +191,6 @@ header::before{
     font-weight: 400;
     text-align: center;
     margin-bottom: 42px;
-
 }
 .header__title{
     font-size: 150px;
@@ -270,7 +269,6 @@ header::before{
 .header__slider .active{
     opacity: 1;
 }
-
 .header__slider .active::before{
     content: '';
     display:flex;
@@ -607,7 +605,6 @@ hr{
     right: 0;
     transform: rotate(135deg);
     margin-left: 30px;
-
 }
 .comments-slider {
     width: 100%;
@@ -783,7 +780,7 @@ hr{
     text-transform: uppercase;
     margin-bottom: 17px;
     z-index: 1;
-  }
+}
 .picture__subtitle{
     font-family: "Roboto";
     font-style: italic;
@@ -803,7 +800,7 @@ hr{
 .mfp-zoom-out-cur{
     cursor: auto;
 }
-/* start state */
+                                                                                /* start state */
 .mfp-with-anim {
     opacity: 0;
     transition: all 0.3s ease-in-out;
@@ -813,7 +810,7 @@ hr{
 .mfp-bg {
     transition: all 0.5s;
 }
-/* animate in */
+                                                                                /* animate in */
 .mfp-ready .mfp-with-anim {
     opacity: 1;
     transform: rotateY(0deg);
@@ -1105,7 +1102,6 @@ input[type=submit]{
     box-sizing: border-box;
     font-family: inherit;
     transition:background-color .6s linear;
-
 }
 input[type=submit]:hover{
     background-color: #53bba8;
@@ -1146,7 +1142,7 @@ input[type=submit]:hover{
     line-height: 24px;
     font-style: italic;
 }
-.footer-instagran {
+.footer-instagram {
     width: 22%;
 }
 .instagram__images {
@@ -1182,7 +1178,7 @@ input[type=submit]:hover{
     }
                                                                                  /* Footer  */       
     .footer-instagran {
-    width: auto;
+        width: auto;
     }
 }                                                                                                                                                 
 @media (max-width: 990px)   {
@@ -1244,7 +1240,7 @@ input[type=submit]:hover{
     } 
                                                                                 /*Clients*/
    .clients{
-       padding-bottom: 50px;
+        padding-bottom: 50px;
    }                                                                         
     .commet__item {
         padding: 0 20px 0 35px;
@@ -1253,8 +1249,7 @@ input[type=submit]:hover{
     }
                                                                                 /*Work*/
     .picture__text{
-        margin-top: 25px;
-       
+        margin-top: 25px;  
     }
     .picture__title {
         margin-bottom: 8px; 
@@ -1262,7 +1257,6 @@ input[type=submit]:hover{
     }
     .picture__subtitle{
         font-size: 12px;
-
     }
 
                                                                                  /* Footer  */                                                                                          
@@ -1334,11 +1328,11 @@ input[type=submit]:hover{
         -o-transition: all 0.5s;
         transition: all 0.5s;
         top: 0;
-        width: 80%;
+        width: 400px;
         min-width: 240px;
         max-width: 440px;
         height:100vh;
-        right: -80%;
+        right: -400px;
     }
     .menu__title{
         text-align: center;
@@ -1372,7 +1366,7 @@ input[type=submit]:hover{
         right: 0;
     }
     body.pmr-open #wrapper {
-        left: -80%
+        left: -400px;
     }
                                                                                /*Products */
     .products-cards_inner {
@@ -1385,10 +1379,10 @@ input[type=submit]:hover{
 @media (max-width: 930px) and (min-width: 769px){  
                                                                                 /*Team */
     .about-image__social a {
-    padding: 10px;
+        padding: 10px;
     }
     .about-image__social a i{
-    font-size: 22px;
+        font-size: 22px;
     }
 }        
 @media (max-width: 850px )  and (min-width: 769px)  {    
@@ -1447,7 +1441,7 @@ input[type=submit]:hover{
     }
                                                                               /* Devices */
     .devices__image{
-    padding: 0 40px 0 40px;
+        padding: 0 40px 0 40px;
     }
     .devices__image_iPhone{
         left: calc(50% + 80px);
@@ -1500,19 +1494,19 @@ input[type=submit]:hover{
         margin-bottom: 60px;
     }
     .picture{
-       grid-template-columns: repeat(2, 1fr);     
-       margin-bottom: 40px;
+        grid-template-columns: repeat(2, 1fr);     
+        margin-bottom: 40px;
     }
     .picture .picture__inner:nth-child(3){
         grid-column-start: 1; 
         grid-row-start: 3;
         grid-row-end: 5;
-    }
-                                                                            /*Clients*/
+    }   
+                                                                              /*Clients*/
     .clients{
         padding-bottom: 40px;
     }
-    .clients-commets {
+    .clients-comments {
         display:block;
     }
     .commet__item{
@@ -1522,7 +1516,7 @@ input[type=submit]:hover{
     .commet__item img{
         align-self: center;
     }          
-                                                                            /*Blog*/
+                                                                                 /*Blog*/
     .blog{
         margin-bottom: 80px;
     }                                                                            
@@ -1540,7 +1534,7 @@ input[type=submit]:hover{
     .blog-item__desk{
         padding: 0;
     }  
-                                                                                   /* Footer  */
+                                                                                /* Footer  */
     .footer-inner{       
         justify-content: center;
         text-align: center;
@@ -1552,9 +1546,9 @@ input[type=submit]:hover{
     .instagram__images {
         display: block;
     }
-   }                                                                                                                                                
+}                                                                                                                                                
 @media (max-width: 575px){
-                                                                            /* About */           
+                                                                                /* About */           
     .counter-inner{
         flex-direction: column;
     }  
@@ -1570,7 +1564,7 @@ input[type=submit]:hover{
     }    
                                                                               /* Services */
     .services-card__inner{
-     flex-direction: column;
+        flex-direction: column;
     } 
     .services-card {
         width: 80%;
@@ -1581,19 +1575,19 @@ input[type=submit]:hover{
     }
                                                                             /* Devices */
      .devices__image{
-      max-width: 320px;
+        max-width: 320px;
     }
     .devices__image_iPhone{
         left: calc(50% + 20px);
         max-width: 180px;
     }
-                                                                            /* Products */
+                                                                                 /* Products */
     .comments-slider{
         display: block;
     }
     .comments-slider img{
         display: block;
-       margin:0 auto 15px;
+        margin:0 auto 15px;
     }
     .comment__text {
         margin-bottom: 15px;
@@ -1602,15 +1596,15 @@ input[type=submit]:hover{
         padding: 0 40px;
     }
 
-                                                                               /*Team */
+                                                                                   /*Team */
     .about-image-item{
-    padding: 20px;
+        padding: 20px;
     }                                                                            
     .logo__wrap{
         width: 50%;
     }      
     .picture__text{ 
-         margin-top: 25px;
+        margin-top: 25px;
         transform: translate(-50%);
     }
     .picture__title{
@@ -1621,12 +1615,12 @@ input[type=submit]:hover{
         font-size: 14px;
     }    
    .about-image__social a {
-    padding: 10px;
+        padding: 10px;
     }
     .about-image__social a i{
-    font-size: 22px;
+        font-size: 22px;
     }
-                                                                             /*Clients*/
+                                                                                    /*Clients*/
     .commet__item {
         margin-bottom: 30px;
     }   
@@ -1642,7 +1636,7 @@ input[type=submit]:hover{
     }                                                          
                                                                                    /* Footer  */
     footer{
-    padding-top: 50px;
+        padding-top: 50px;
     }                                                                                            
     .footer__text {
         font-size: 10px;
@@ -1664,7 +1658,7 @@ input[type=submit]:hover{
 }   
                                                                                                                                   
 @media (max-width: 430px){
-    /* Header */
+                                                                                /* Header */
     .header__subtitle{
         font-size: 36px;
         margin: 100px 0 20px 0
@@ -1673,7 +1667,7 @@ input[type=submit]:hover{
         font-size: 45px;
     }
     .header__slider .active::before{
-       width: 10%;
+        width: 10%;
     }
     .header__slider ul li{
         padding: 15px 0;
@@ -1682,7 +1676,14 @@ input[type=submit]:hover{
     .slider-number{
         font-size: 18px;
     }
-    /* About */
+    .menu {
+        width: 250px;
+        right: -250px;
+    }
+    body.pmr-open #wrapper {
+        left: -250px;
+    }
+                                                                                /* About */
     .section-text__inner{
         padding-top: 35px;
         font-size: 15px;
@@ -1711,7 +1712,7 @@ input[type=submit]:hover{
     }
     .counter-card {
         padding: 10px 0;
-        }
+    }
                                                                                    /* Services */
     .services-card {
         width: 100%;
@@ -1724,7 +1725,7 @@ input[type=submit]:hover{
         width: auto;
         height: 25px;
     }
-        /* Devices */
+                                                                                    /* Devices */
     .devices__image{
         max-width: 80%;
     }
@@ -1732,7 +1733,7 @@ input[type=submit]:hover{
         left:calc(50% + 50px);
         max-width: 140px;
     } 
-                                                                                /*Team */
+                                                                                    /*Team */
     .about-image-item{
         padding: 10px;
     }                                                                            
@@ -1740,18 +1741,18 @@ input[type=submit]:hover{
         width: 30%;
     }      
     .picture__text{ 
-            margin-top: 15px;
-      }
-      .team__name{
+        margin-top: 15px;
+    }
+    .team__name{
         margin: 15px 0px 10px;
-      }
+    }
     .about-image__social a {
-    padding: 8px;
+        padding: 8px;
     }
     .about-image__social a i{
-    font-size: 18px;
+        font-size: 18px;
     }
-    /* Clients */
+                                                                                    /* Clients */
     .commet__item {
         display: block;
         padding: 0 5px 0 5px;
@@ -1764,7 +1765,7 @@ input[type=submit]:hover{
         width: 100%;
         margin-left: 0;
     }
-    /* Work */
+                                                                                    /* Work */
     .work{
         margin-bottom: 20px;
     }
@@ -1776,49 +1777,47 @@ input[type=submit]:hover{
         margin-top: 10px;
     }
     .products-comments{
-     padding: 20px 0 20px 0;
+        padding: 20px 0 20px 0;
     }
-
-/* Footer */
-.footer__inner{
-    padding-bottom: 30px;
+                                                                                    /* Footer */
+    .footer__inner{
+        padding-bottom: 30px;
+    }
 }
-}
- 
 @media (max-width: 400px){
-     /* Devices */
-     .devices__image_iPhone{
+                                                                                    /* Devices */
+    .devices__image_iPhone{
         left: calc(50% + 40px);
         max-width: 120px;
-        }
-        /* Products */
-        .block__title__wrapper  img{
-            display: none;
-        }
-        .comments__wrap {
-           width: 100%;
-           margin: 0;
-        }
-        .comment__text {
-            margin-bottom: 10px;
-        }
-        .comments-slider img{
-            max-width: 100px;
-            height: auto;
-        }
-        /* Team */
-        .about-image__social a {
-            padding: 4px;
-        }
-        .about-image__social a i{
-            font-size: 12px;
-        }
-     } 
+    }
+                                                                                    /* Products */
+    .block__title__wrapper  img{
+        display: none;
+    }
+    .comments__wrap {
+        width: 100%;
+        margin: 0;
+    }
+    .comment__text {
+        margin-bottom: 10px;
+    }
+    .comments-slider img{
+        max-width: 100px;
+        height: auto;
+    }
+                                                                                    /* Team */
+    .about-image__social a {
+        padding: 4px;
+    }
+    .about-image__social a i{
+        font-size: 12px;
+    }
+} 
 @media (max-width: 330px){
-     /* Devices */
-     .devices__image_iPhone{
+                                                                                    /* Devices */
+    .devices__image_iPhone{
         left: calc(50% + 40px);
         max-width: 100px;
-        }
-     } 
+    }
+} 
                                                                                                                                   
